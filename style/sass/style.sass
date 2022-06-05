@@ -1,0 +1,882 @@
+@import "normalize.scss"
+@import "reset.scss"
+
+@import url('http://fonts.cdnfonts.com/css/circe')
+
+*
+  box-sizing: border-box
+
+body
+  font-family: 'Circe', sans-serif
+  font-weight: 400
+
+.container
+  margin: 0 auto
+  width: 1218px
+
+.circle
+  border-radius: 100%
+  border: none
+  z-index: -1
+
+.title
+  font-size: 46px
+  font-family: 'Circe', sans-serif
+  line-height: 120%
+  font-weight: 700
+
+.text
+  font-weight: 400
+  font-size: 26px
+  line-height: 130%
+
+@keyframes opacity_animation
+  from
+    display: block
+    opacity: 0
+    transform: scale(0.2)
+  to
+    opacity: 1
+    transform: scale(1)
+
+
+
+@keyframes rotate_animation
+  from
+    transform: rotate(0deg)
+  40%
+    transform: rotate(-9deg)
+  80%
+    transform: rotate(8deg)
+  to
+    transform: rotate(0deg)
+
+@keyframes rotate_animation_micro
+  from
+    transform: rotate(9deg)
+  40%
+    transform: rotate(15deg)
+  80%
+    transform: rotate(-15deg)
+  to
+    transform: rotate(9deg)
+
+@keyframes card1
+  from
+    opacity: 0
+    transform: scale(0.2)
+  to
+    opacity: 1
+    transform: scale(1)
+
+@keyframes card2
+  from
+    opacity: 0
+    transform: scale(0.2)
+  to
+    display: block
+    opacity: 1
+    transform: scale(1)
+
+@keyframes cards_animation
+  from
+    transform: translate(0px)
+    opacity: 0
+  50%
+    transform: translate(0px, 30px)
+    opacity: 1
+  to
+    transform: translate(0px)
+    opacity: 1
+
+
+
+
+
+
+.header
+  position: relative
+  width: 1920px
+  min-height: 440px
+  &__wrapper
+    min-height: 360px
+  &__title
+    font-size: 90px
+    font-family: 'Circe Bold', sans-serif
+  &__circle
+    position: absolute
+    top: -66.21%
+    left: 7.33%
+    background: #FCF1F5
+  &__second_circle
+    display: none
+    width: 266.91px
+    height: 266.91px
+    background: #FCF1F5
+
+
+
+.first_section
+  position: relative
+  width: 1920px
+  min-height: 539px
+  margin-bottom: 118px
+  &__wrapper
+    position: relative
+    display: flex
+    flex-direction: row
+  &__img
+    position: absolute
+    top: -39px
+    left: 600px
+    width: 689px
+    height: 622px
+    animation-name: rotate_animation
+    animation-duration: 4s
+  &__first_circle
+    width: 516.91px
+    height: 516.91px
+    position: absolute
+    background: #FFF7E2
+    top: -79px
+    left: 624px
+
+  &__second_circle
+    width: 516.91px
+    height: 516.91px
+    position: absolute
+    background: #FCF1F5
+    bottom: 709px
+    left: -216px
+
+
+
+
+.left_side
+  width: 520px
+  height: 420px
+  font-weight: 400
+  font-size: 26px
+  line-height: 130%
+  & span
+    font-size: 32px
+    font-family: 'Circe Bold', sans-serif
+  &__start_text
+    margin-bottom: 22px
+  &__tasks_text
+    margin-bottom: 12px
+  &__first_p
+    margin-bottom: 10px
+  &__second_p
+    margin-bottom: 17px
+  &__time_start
+    margin-bottom: 22px
+
+
+
+
+.second_section
+  position: relative
+  width: 1920px
+  min-height: 442px
+  margin-bottom: 103px
+  &__wrapper
+    display: flex
+    flex-direction: row
+  &__img
+    position: absolute
+    top: 92px
+    right: 351px
+    width: 388px
+    height: 189.19px
+  &__title
+    margin-bottom: 36px
+  &__text_box
+    width: 730px
+    height: 273px
+    font-weight: 400
+    font-size: 26px
+    line-height: 130%
+  &__left_side
+    & span
+      font-family: 'Circe Bold', sans-serif
+    & p
+      font-size: 26px
+      font-family: 'Circe', sans-serif
+  &__first_circle
+    position: absolute
+    top: 57px
+    left: 741px
+    width: 375px
+    height: 375px
+    background: #FCF1F5
+    border: none
+    border-radius: 100%
+    z-index: -1
+    animation-name: opacity_animation
+    animation-duration: 4s
+  &__second_circle
+    position: absolute
+    top: -34px
+    left: 317px
+    width: 154px
+    height: 154px
+    background: #DDDCED
+    border: none
+    border-radius: 100%
+    z-index: -1
+    animation-name: opacity_animation
+    animation-duration: 4s
+    animation-delay: 0.2s
+
+
+
+.third_section
+  width: 1920px
+  min-height: 621px
+  margin-bottom: 105px
+  &__extra_wrapper
+    display: inline-flex
+  &__left_side
+    width: 595px
+    height: 621px
+    margin-right: 118px
+  &__title
+    margin-bottom: 50px
+  &__mini_title
+    font-size: 32px
+    margin-bottom: 20px
+  &__number
+    margin-bottom: 30px
+  &__text
+    font-weight: 400
+    font-size: 26px
+    line-height: 130%
+    margin-bottom: 15px
+    & span
+      padding-left: 5px
+  &__list
+    padding-left: 40px
+    font-size: 26px
+    font-family: 'Circe', sans-serif
+  &__right_side
+    display: inline-flex
+    animation-name: cards_animation
+    animation-duration: 2s
+    &__first_img
+      width: 311px
+      height: 621px
+      margin-right: 30px
+    &__second_img
+      width: 164px
+      height: 621px
+
+
+
+li
+  position: relative
+  list-style-type: none
+  line-height: 130%
+li::before
+  position: absolute
+  content: '•'
+  left: -25px
+
+
+
+.number
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 80px
+  height: 80px
+  font-size: 60px
+  font-weight: 350
+  background: #DDDCED
+  border: none
+  border-radius: 100%
+
+
+.fourth_section
+  width: 1920px
+  min-height: 357px
+  position: relative
+  margin-bottom: 100px
+  &__wrapper
+    display: flex
+    flex-direction: row
+    margin-bottom: 53px
+  &__left_side
+    margin-right: 125px
+    &__number
+      margin-bottom: 33px
+    width: 578px
+    height: 361px
+    &__title
+      margin-bottom: 10px
+      font-size: 32px
+  &__right_side
+    width: 608px
+    height: 190px
+    &__number
+      margin-bottom: 33px
+    &__title
+      font-size: 32px
+  &__circle
+    position: absolute
+    top: 213px
+    right: 305px
+    width: 450.29px
+    height: 440.37px
+    background: #FFF7E2
+    z-index: -1
+  &__cards_box
+    display: flex
+    flex-direction: row
+    height: 445px
+    animation-name: cards_animation
+    animation-duration: 2s
+.big_pic
+  margin-right: 30px
+  display: flex
+  order: -1
+.mini_img
+  display: flex
+  flex-direction: row
+  margin-right: 30px
+.cards
+  &__item
+    margin-right: 30px
+    &:last-child
+      margin-right: 0
+.first
+  display: flex
+  order: -2
+
+.fifth_section
+  position: relative
+  width: 1920px
+  min-height: 416px
+  margin-bottom: 30px
+  &__wrapper
+    display: flex
+    flex-direction: row
+  &__left_side
+    margin-right: 5px
+    width: 610px
+    height: 416px
+  &__title
+    font-size: 32px
+  &__number
+    margin-bottom: 40px
+  &__img
+    width: 635.6px
+    height: 521.3px
+    transform: rotate(9deg)
+    animation-name: rotate_animation_micro
+    animation-duration: 4s
+  &__text
+    margin-top: 20px
+  &__circle
+    position: absolute
+    top: 104px
+    right: 682px
+    width: 245px
+    height: 245px
+    background: #FCF1F5
+    z-index: -1
+
+
+.sixth_section
+  position: relative
+  width: 1920px
+  min-height: 553px
+  margin-bottom: 100px
+  animation-name: cards_animation
+  animation-duration: 2s
+  &__img
+    margin-right: 20px
+    &:last-child
+      margin-right: 0
+  &__inside_img_box
+    position: relative
+  &__first_img_inside
+    position: absolute
+    bottom: 210px
+    left: 642px
+    z-index: 2
+  &__second_img_inside
+    position: absolute
+    bottom: 210px
+    left: 24px
+    z-index: 2
+  &__circle
+    position: absolute
+    bottom: -51px
+    left: 278px
+    width: 201px
+    height: 197px
+    background: #FFF7E2
+    z-index: -1
+
+
+.seventh_section
+  width: 1920px
+  min-height: 1438px
+  margin-bottom: 100px
+  &__text_box
+    margin-bottom: 100px
+  &__text_title
+    font-size: 32px
+  &__number
+    margin-bottom: 33px
+  &__first_text
+    margin-top: 30px
+  &__second_text
+    margin-top: 10px
+  &__tables_box
+    width: 1263px
+    height: 1070px
+    border: 4px solid #F0CCC3
+    border-radius: 30px
+    padding: 30px 30px 30px 30px
+  &__table_title
+    margin-bottom: 40px
+  &__cards_box
+    width: 1158px
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    margin-bottom: 45px
+    padding-right: 20px
+    animation-name: card1
+    animation-duration: 2s
+  &__cards_wrapper
+    position: relative
+  &__cards_item
+    text-align: center
+    &__img
+      width: 65.04px
+      height: 51.95px
+    &__like
+      font-weight: 700
+      line-height: 130%
+      font-size: 28px
+  &__arrow
+    position: absolute
+    left: 205px
+    top: 61px
+  &__tables_text
+    margin-bottom: 60px
+  &__tables_first_text
+    margin-bottom: 20px
+  &__tables_img
+    margin-bottom: 30px
+  &__tables_last_text
+    padding-right: 45px
+
+
+.first_arrow
+  left: 219px
+.second_arrow
+  left: 198px
+.third_arrow
+  left: 210.5px
+
+.footer
+  position: relative
+  width: 1920px
+  min-height: 613px
+  &__wrapper
+    display: flex
+    flex-direction: row
+  &__left_side
+    height: 485px
+    width: 609px
+  &__title
+    margin-bottom: 30px
+  &__list
+    width: 554px
+    padding-left: 43px
+  &__list_item
+    margin-bottom: 15px
+    &:last-child
+      margin-bottom: 0
+  &__first_circle
+    position: absolute
+    top: -54px
+    left: 242px
+    width: 400px
+    height: 377.23px
+    background: #FFF7E2
+    z-index: -1
+    animation-name: opacity_animation
+    animation-duration: 4s
+  &__second_circle
+    position: absolute
+    top: 355px
+    right: 770px
+    width: 203.31px
+    height: 202.19px
+    background: #DDDCED
+    z-index: -1
+
+
+@media (max-width: 479px)
+  .container
+    width: 330px
+    margin: 0 auto
+  .header
+    width: 360px
+    min-height: 172px
+    &__wrapper
+      min-height: 176px
+    &__second_circle
+      display: block
+      position: absolute
+      top: -186px
+      left: -104px
+  .header__title
+    width: 330px
+    height: 116px
+    font-size: 29px
+    margin-top: 30px
+
+  .first_section
+    padding: 0 15px 0 15px
+    width: 360px
+    height: 718.69px
+    &__wrapper
+      display: flex
+      flex-direction: column
+    &__img
+      width: 330px
+      height: 297.91px
+      top: 496px
+      left: -11px
+    &__first_circle
+      width: 247.28px
+      height: 247.28px
+      top: 491px
+      left: -8px
+  .left_side
+    width: 330px
+    height: 420px
+    font-size: 19px
+    & span
+      font-size: 22px
+    &__first_p
+      width: 330px
+      height: 64px
+      margin-bottom: 20px
+    &__second_p
+      width: 330px
+      height: 64px
+      margin-bottom: 50px
+    &__time_start
+      display: flex
+      flex-direction: column
+      & span
+        margin-bottom: 6px
+    &__time_end
+      display: flex
+      flex-direction: column
+      & span
+        margin-bottom: 6px
+  .second_section
+    padding: 0 15px 0 15px
+    width: 330px
+    height: 529.91px
+    &__wrapper
+      flex-direction: column
+    & p
+      width: 330px
+      height: 322px
+      font-size: 19px
+    &__title
+      font-size: 22px
+    &__second_circle
+      left: -99px
+      top: -50px
+    &__first_circle
+      top: 217px
+      left: 231px
+      width: 199.8px
+      height: 199.8px
+    &__img
+      width: 330px
+      height: 160.9px
+      top: 434px
+      left: 15px
+  .third_section
+    padding: 0 15px 0 15px
+    width: 330px
+    height: 981px
+    &__extra_wrapper
+      display: flex
+      flex-direction: column
+    &__title
+      margin-bottom: 41px
+      font-size: 22px
+    &__left_side
+      height: 535px
+    &__number
+      width: 60px
+      height: 60px
+      font-size: 29px
+      margin-bottom: 15px
+    &__mini_title
+      width: 330px
+      font-size: 19px
+      margin-bottom: 14px
+    &__text
+      width: 330px
+      font-size: 19px
+      margin-bottom: 5px
+      & span
+        padding: 0
+    &__list
+      width: 330px
+      font-size: 19px
+      margin-bottom: 20px
+
+
+    &__right_side
+      width: 330px
+      &__first_img
+        width: 203px
+        height: 405px
+        margin-right: 20px
+      &__second_img
+        width: 107px
+        height: 405px
+  .fourth_section
+    width: 360px
+    padding: 0 15px 0 15px
+    height: 626px
+    &__wrapper
+      flex-direction: column
+    &__circle
+      display: none
+    &__cards_box
+      position: relative
+      height: 287px
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      width: 330px
+    &__left_side
+      width: 330px
+      height: 227px
+      margin-bottom: 52px
+      &__number
+        width: 60px
+        height: 60px
+        font-size: 29px
+        margin-bottom: 15px
+      &__title
+        width: 330px
+        height: 69px
+        font-size: 19px
+        margin-bottom: 14px
+      &__text
+        width: 330px
+        height: 69px
+        font-size: 19px
+    &__right_side
+      width: 330px
+      height: 105px
+      &__number
+        width: 60px
+        height: 60px
+        font-size: 29px
+        margin-bottom: 15px
+      &__title
+        width: 330px
+        height: 23px
+        font-size: 19px
+  .cards
+    &__item
+      margin: 0
+  .first
+    width: 138px
+    height: 138px
+    margin-bottom: 10px
+  .second
+    width: 172px
+    height: 287px
+  .third
+    width: 138px
+    height: 138px
+  .big_pic
+    width: 172px
+    height: 287px
+    margin: 0
+    display: flex
+    align-items: flex-end
+    margin-left: 20px
+  .third_mini_img
+    position: absolute
+    top: 149px
+    width: 138px
+    height: 138px
+
+  .fifth_section
+    position: relative
+    width: 360px
+    padding: 0 15px 0 15px
+    height: 430px
+    &__number
+      width: 60px
+      height: 60px
+      font-size: 29px
+      margin-bottom: 15px
+    &__title
+      width: 330px
+      height: 23px
+      font-size: 19px
+      margin-bottom: 14px
+    &__text
+      font-size: 19px
+      width: 330px
+      height: 253px
+      & span
+        width: 40px
+        text-align: justify
+    &__circle
+      width: 58.21px
+      height: 54.91px
+      top: 362px
+      left: 196px
+    &__img
+      position: absolute
+      width: 148.58px
+      height: 108.54px
+      top: 343px
+      left: 182px
+  .sixth_section
+    width: 360px
+    padding: 0 15px 0 15px
+    height: 660px
+    &__img
+      width: 330px
+      height: 350.1px
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
+    &__inside_img_box
+      position: relative
+    &__first_img_inside
+      position: absolute
+      width: 303.55px
+      height: 195.14px
+      top: -313px
+      left: 13px
+    &__second_img_inside
+      width: 303.55px
+      height: 195.14px
+      top: -668px
+      left: 13px
+    &__circle
+      top: 589px
+      left: 205px
+
+  .seventh_section
+    width: 360px
+    padding: 0 15px 0 15px
+    &__wrapper
+      width: 330px
+    &__number
+      width: 60px
+      height: 60px
+      font-size: 29px
+      margin-bottom: 15px
+    &__text_box
+      margin-bottom: 50px
+    &__text_title
+      height: 46px
+      font-size: 19px
+      margin-bottom: 14px
+    &__first_text
+      height: 184px
+      font-size: 19px
+      margin-top: 10px
+    &__second_text
+      font-size: 19px
+      height: 69px
+      margin-top: 17px
+    &__tables_box
+      width: 330px
+      height: 1350px
+      padding: 10px 10px 10px 10px
+    &__table_title
+      font-size: 29px
+      width: 310px
+      height: 32px
+      margin-bottom: 30px
+    &__cards_box
+      width: 313px
+      height: 525px
+      flex-direction: column
+      justify-content: flex-start
+    &__cards_item
+      margin-bottom: 60px
+      font-size: 19px
+      & span
+        font-size: 29px
+      &__like
+        font-size: 22px
+      &__img
+        width: 50px
+        height: 40px
+    &__arrow
+      transform: rotate(90deg)
+      width: 30px
+      top: 108px
+      left: 131px
+    &__tables_first_text
+      width: 310px
+      height: 138px
+      font-size: 19px
+      margin-bottom: 20px
+    &__tables_second_text
+      width: 310px
+      height: 138px
+      font-size: 19px
+      padding-right: 10px
+    &__tables_img
+      width: 310px
+      height: 102.8px
+      padding-right: 10px
+    &__tables_last_text
+      width: 310px
+      height: 119px
+      font-size: 19px
+
+  .footer
+    width: 360px
+    height: 736px
+    padding: 0 15px 0 15px
+    &__wrapper
+      flex-direction: column
+    &__title
+      width: 330px
+      height: 48px
+      font-size: 22px
+    &__list
+      width: 330px
+    &__list_item
+      font-size: 19px
+    &__img
+      width: 325.7px
+      height: 263.11px
+    &__second_circle
+      width: 107.64px
+      height: 107.64px
+      top: 647px
+      left: 239px
+    &__first_circle
+      width: 180px
+      height: 170px
+      top: -18px
+      left: -58px
