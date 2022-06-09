@@ -42,7 +42,7 @@
 
     </div>
 
-    <img class="first_section__img" src="img/image%206.png" alt="img">
+    <img class="first_section__img anim_item" src="img/image%206.png" alt="img">
     <div class="first_section__first_circle circle"></div>
     <div class="first_section__second_circle circle"></div>
   </div>
@@ -56,12 +56,15 @@
       <p class="second_section__text_box">
         <span>Клиент — испанский бренд кукол Llorens.</span> Его особенность — высокий ценовой сегмент, цена одной куклы доходит до 500 долларов. К нам Llorens пришел в предновогодний период: за повышением узнаваемости бренда, а также коллекции Miss Minis в Москве и Санкт-Петербурге. Кроме этого, он хотел увеличить продажи кукол на Wildberries и Ozon. Сейчас клиент обращается к нам сезонно, запускает рекламу перед праздниками, чтобы его игрушки покупали в подарок.
       </p>
+
+      <img class="second_section__img" src="img/llorens_2018%201.png" alt="img">
     </div>
 
-    <img class="second_section__img" src="img/llorens_2018%201.png" alt="img">
+     <div class="second_section__first_circle anim_item"></div>
+     <div class="second_section__second_circle anim_item"></div>
+
   </div>
-  <div class="second_section__first_circle anim_item"></div>
-  <div class="second_section__second_circle"></div>
+
 </section>
 
 <section class="third_section">
@@ -86,10 +89,16 @@
         </ul>
       </div>
 
-      <div class="third_section__right_side">
-        <img class="third_section__right_side__first_img" src="img/17955249470270713520%201%201.png" alt="img">
-        <img class="third_section__right_side__second_img" src="img/download%201.png" alt="img">
-      </div>
+<!--      <div class="third_section__right_side ">-->
+        <ul class="third_section__list_img anim_item">
+          <li>
+            <img class=" anim_item third_section__list_img__first_img" src="img/17955249470270713520%201%201.png" alt="img">
+          </li>
+          <li>
+            <img class="anim_item third_section__list_img__second_img" src="img/download%201.png" alt="img">
+          </li>
+        </ul>
+<!--      </div>-->
     </div>
 
   </div>
@@ -112,20 +121,23 @@
       <h6 class="fourth_section__right_side__title title">Баннеры на поиске Яндекса</h6>
     </div>
 
+    <div class="fourth_section__circle circle"></div>
   </div>
 
-  <div class="fourth_section__circle circle"></div>
 
-  <div class="fourth_section__cards_box cards
-  container">
 
-      <img src="img/image%2014.png" alt="img" class="cards__item first">
-      <div class="big_pic"><img src="img/download%204.png" alt="img" class="cards__item second"></div>
-      <div class="third_mini_img">
+  <ul class="fourth_section__cards_box cards
+  container anim_item">
+
+     <li class="anim_item fourth_section__cards_item"><img src="img/image%2014.png" alt="img" class="cards__item first"></li>
+
+      <li class="anim_item fourth_section__cards_item"><img src="img/download%204.png" alt="img" class="cards__item second"></li>
+
+      <li class="anim_item fourth_section__cards_item">
         <img src="img/1531278881640306323%201.png" alt="img" class="cards__item third">
-      </div>
+      </li>
 
-  </div>
+  </ul>
 </section>
 
 <section class="fifth_section">
@@ -139,23 +151,27 @@
           Мы отобрали более 3000 детских каналов в Youtube для показа видеорекламы. Записали песню и сделали монтаж ролика для продвижения коллекции Miss Minis. Также запустили рекламу с 4 имиджевыми роликами "Куклы Llorens", которые показываются <span>пользователям в определенном<br> порядке.</span>
         </p>
       </div>
-      <img src="img/Frame%20642%201.png" alt="img" class="fifth_section__img">
-    </div>
+      <img src="img/Frame%20642%201.png" alt="img" class="fifth_section__img anim_item">
+
       <div class="fifth_section__circle circle"></div>
+    </div>
+
 </section>
 
 <section class="sixth_section">
-  <div class="sixth_section_wrapper container">
-    <img src="img/youtube-1%201.png" alt="img" class="sixth_section__img">
+  <ul class="sixth_section__wrapper anim_item container">
+    <li class="anim_item">
+      <img src="img/youtube-1%201.png" alt="img" class="sixth_section__img">
+      <img src="img/image%2013.png" alt="img" class="sixth_section__first_img_inside">
 
-    <img src="img/youtube-1%202.png" alt="img" class="sixth_section__img">
+    </li>
+    <li class="anim_item">
+      <img src="img/youtube-1%202.png" alt="img" class="sixth_section__img">
+      <img src="img/image%2013%20(1).png" alt="img" class="sixth_section__second_img_inside">
+    </li>
 
-  </div>
-  <div class="sixth_section__inside_img_box container">
-    <img src="img/image%2013%20(1).png" alt="img" class="sixth_section__first_img_inside">
-    <img src="img/image%2013.png" alt="img" class="sixth_section__second_img_inside">
-  </div>
-  <div class="sixth_section__circle circle"></div>
+  </ul>
+
 </section>
 
 <section class="seventh_section">
@@ -180,38 +196,40 @@
       <div class="seventh_section__table_title title">
         Результаты:
       </div>
-      <div class="seventh_section__cards_box">
-        <div class="seventh_section__cards_wrapper card1">
+      <ul class="seventh_section__cards_box anim_item">
+        <li class="anim_item seventh_section__cards_wrapper card1">
           <p class="seventh_section__cards_item text">
             <span class="title">4,5 млн</span><br>
             человек — охват<br>
             видео рекламы
           </p>
           <img class="seventh_section__arrow first_arrow" src="img/Vector%201.png" alt="arrow">
-        </div>
+        </li>
 
-        <div class="seventh_section__cards_wrapper card2">
+        <li class="anim_item seventh_section__cards_wrapper card2">
           <p class="seventh_section__cards_item text">
             <span class="title">0,0002$</span><br>
             цена за один<br>
             просмотр
           </p>
           <img class="seventh_section__arrow second_arrow" src="img/Vector%201.png" alt="arrow">
-        </div>
-        <div class="seventh_section__cards_wrapper card3">
+        </li>
+        <li class="seventh_section__cards_wrapper card3">
           <p class="seventh_section__cards_item text">
             <span class="title">3000</span><br>
             потенциальных<br>
             покупателей
           </p>
-          <img class="seventh_section__arrow third_arrow" src="img/Vector%201.png" alt="arrow">
-        </div>
-
-        <p class="seventh_section__cards_item text card4">
+          <img class="anim_item seventh_section__arrow third_arrow" src="img/Vector%201.png" alt="arrow">
+        </li>
+        <li class="anim_item">
+          <p class="seventh_section__cards_item text card4">
           <img class="seventh_section__cards_item__img" src="img/Group.png" alt="img"><br>
           <span class="seventh_section__cards_item__like">довольный<br> клиент</span>
         </p>
-      </div>
+        </li>
+
+      </ul>
 
       <div class="seventh_section__tables_text">
         <p class="seventh_section__tables_first_text text">
@@ -250,10 +268,12 @@
       </ul>
     </div>
     <img src="img/image%209.png" alt="img" class="footer__img">
+
+    <div class="footer__first_circle circle anim_item"></div>
+    <div class="footer__second_circle circle"></div>
   </div>
 
-  <div class="footer__first_circle circle"></div>
-  <div class="footer__second_circle circle"></div>
+
 </footer>
 
 

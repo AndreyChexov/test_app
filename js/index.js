@@ -4,7 +4,7 @@ if (animItems.length > 0)
 {
     window.addEventListener('scroll', animOnScroll);
     function animOnScroll() {
-        for (let i = 0; i < animItems; i++) {
+        for (let i = 0; i < animItems.length; i++) {
             const animItem = animItems[i];
             const animItemHeight = animItem.offsetHeight;
             const animItemOffset = offset(animItem).top;
@@ -13,10 +13,10 @@ if (animItems.length > 0)
             let  animItemPoint = window.innerHeight - animItemHeight / animStart;
 
             if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight) ) {
-                animItem.classList.add('__active');
+                animItem.classList.add('active');
             }
             else {
-                animItem.classList.remove('__active');
+                animItem.classList.remove('active');
             }
 
         }
