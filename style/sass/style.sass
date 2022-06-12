@@ -581,10 +581,10 @@ li::before
 
 @media (max-width: 479px)
   .container
-    width: 330px
+    max-width: 330px
     margin: 0 auto
   .header
-    width: 360px
+    max-width: 360px
     min-height: 172px
     &__wrapper
       min-height: 176px
@@ -601,7 +601,7 @@ li::before
 
   .first_section
     padding: 0 15px 0 15px
-    width: 360px
+    max-width: 360px
     height: 718.69px
     &__wrapper
       display: flex
@@ -642,8 +642,9 @@ li::before
         margin-bottom: 6px
   .second_section
     padding: 0 15px 0 15px
-    width: 330px
+    max-width: 330px
     height: 529.91px
+    margin-bottom: 110px
     &__wrapper
       flex-direction: column
     & p
@@ -663,7 +664,7 @@ li::before
     &__img
       width: 330px
       height: 160.9px
-      top: 434px
+      top: 45px
       left: 15px
   .third_section
     padding: 0 15px 0 15px
@@ -698,7 +699,7 @@ li::before
       margin-bottom: 20px
 
 
-    &__right_side
+    &__list_img
       width: 330px
       &__first_img
         width: 203px
@@ -708,7 +709,7 @@ li::before
         width: 107px
         height: 405px
   .fourth_section
-    width: 360px
+    max-width: 360px
     padding: 0 15px 0 15px
     height: 626px
     &__wrapper
@@ -720,8 +721,7 @@ li::before
       height: 287px
       display: flex
       flex-direction: row
-      flex-wrap: wrap
-      width: 330px
+      max-width: 330px
     &__left_side
       width: 330px
       height: 227px
@@ -758,29 +758,20 @@ li::before
   .first
     width: 138px
     height: 138px
-    margin-bottom: 10px
   .second
     width: 172px
     height: 287px
   .third
     width: 138px
     height: 138px
-  .big_pic
-    width: 172px
-    height: 287px
-    margin: 0
-    display: flex
-    align-items: flex-end
-    margin-left: 20px
-  .third_mini_img
     position: absolute
-    top: 149px
-    width: 138px
-    height: 138px
+    right: 232px
+    bottom: -3px
+
 
   .fifth_section
     position: relative
-    width: 360px
+    max-width: 360px
     padding: 0 15px 0 15px
     height: 430px
     &__number
@@ -815,6 +806,9 @@ li::before
     width: 360px
     padding: 0 15px 0 15px
     height: 660px
+    &__wrapper
+      display: flex
+      flex-direction: column
     &__img
       width: 330px
       height: 350.1px
@@ -827,19 +821,19 @@ li::before
       position: absolute
       width: 303.55px
       height: 195.14px
-      top: -313px
-      left: 13px
+      top: 41px
+      left: 12px
     &__second_img_inside
       width: 303.55px
       height: 195.14px
-      top: -668px
-      left: 13px
+      top: 42px
+      left: 12px
     &__circle
       top: 589px
       left: 205px
 
   .seventh_section
-    width: 360px
+    max-width: 360px
     padding: 0 15px 0 15px
     &__wrapper
       width: 330px
@@ -911,7 +905,7 @@ li::before
       font-size: 19px
 
   .footer
-    width: 360px
+    max-width: 360px
     height: 736px
     padding: 0 15px 0 15px
     &__wrapper
